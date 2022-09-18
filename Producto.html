@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Bungee+Hairline&family=Courier+Prime&family=Krub:wght@400;700&family=PT+Sans+Narrow&family=Raleway:wght@100&family=Roboto+Condensed&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" href="img/f.png">
+    <script src="js/showP.js"></script>
+</head>
+<body>
+    <header class="header animate__animated animate__slideInDown animate__delay-0.5s">
+        <a href="index.html">
+            <img class="header__logo" src="img/f2.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="Nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>React JS</h1>
+
+        <div class="camisa dos_columnas animate__animated animate__fadeInUp animate__delay-0.5s">
+            <img class="camisa__imagen" src="img/3.jpg" alt="Imagen Producto">
+
+            <div class="camisa__contenido">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quod voluptate necessitatibus nulla repellendus atque similique nihil veniam inventore nostrum totam dicta quas, dignissimos veritatis. Voluptates itaque vel est doloribus!</p>
+
+            <div class="precio__camisa">
+                <h1 class="precio_____camisa">25$</h1>
+                <a href="#" onclick="favoritos()">
+                <svg class="icono_heart" name="favoritos" id="favoritos" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg>
+                </a>
+
+            </div>
+
+            <form class="formulario">
+                <select class="formulario__campo" name="" id="">
+                    <option class="opcion_select" disabled selected>-- Seleccionar Talla --</option>
+                    <option class="opcion_font" value="">Pequeño</option>
+                    <option class="opcion_font" value="">mediano</option>
+                    <option class="opcion_font" value="">Largo</option>
+                </select> 
+                <input class="formulario__campo opcion_select" type="number" placeholder="Cantidad" min="1">
+                <div class="ag_car">   
+                    <a class="Comprar" href="Carrito.html">Agregar Al  Carrito</a>
+                <a class="Comprar" href="PantallaPago.html">Comprar Ahora</a>
+                </div>    
+                </div>           
+            </form>
+
+            </div>
+            
+        </div>
+
+
+    </main>
+    
+<footer class="footer animate__animated animate__fadeInUp animate__delay-1s">
+<p class="footer__texto">Front End Store - Todos los derechos Reservados 2022</p>
+
+</footer>
+
+</body>
+</html>

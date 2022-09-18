@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Bungee+Hairline&family=Courier+Prime&family=Krub:wght@400;700&family=PT+Sans+Narrow&family=Raleway:wght@100&family=Roboto+Condensed&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" href="img/f.png">
+    <script src="js/showP.js"></script>
+</head>
+
+<body>
+    <header class="header animate__animated animate__slideInDown animate__delay-0.5s">
+        <a href="index.html">
+            <img class="header__logo" src="img/f2.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <div class="contenedor contenedor-grid">
+        <main class="contenido-principal">
+            <article>
+                <h1>Metodo De Pago</h1>
+
+                <form class="formulario__data animate__animated animate__zoomIn animate__delay-0.5s no_margin" id="forma">
+                    <fieldset>
+                        <legend>
+                            <h1 class="legend"></h1>
+                        </legend>
+                        <!--Intrucciones para el usuario-->
+                        <div class="contenedor-campos">
+                            <div class="campo">
+                                <label>Titular de Tarjeta</label>
+                                <!--mail-->
+                                <input class="input-text" type="text" placeholder="Pedro Picapiedra">
+                            </div>
+                            <div class="campo">
+                                <label>Numero de Tarjeta</label>
+                                <!--mail-->
+                                <input class="input-text" type="number" placeholder="56757416478">
+                            </div>
+
+                            <div class="campo">
+                                <label>CVV</label>
+                                <!--texto-->
+                                <input class="input-text" type="number" maxlength="3" placeholder="Password">
+                            </div>
+                            <div class="campo">
+                                <label>Fecha De Vencimiento</label>
+                                <!--texto-->
+                                <input class="input-text" type="date" placeholder="Password">
+                            </div>
+
+                        </div>
+                        <div class="alo">
+                            
+                            <a class="btn w-sm-100" href="PantallaEnvio.html">Pagar</a>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </article>
+        </main>
+        <aside class="sidebar-2">
+            <h1>Carrito</h1>
+
+            <div class="producto_carro dos_columnas_pago">
+                <article>
+                    <a href="Producto.html">
+                        <img class="img_form" src="img/10.jpg" alt="">
+                    </a>
+                </article>
+                <article>
+                    <h2 class="texto_carro">typeScript</h2>
+                    <h2>$25</h2>
+                </article>
+                <article>
+                    <a href="Producto.html">
+                        <img class="img_form" src="img/2.jpg" alt="">
+                    </a>
+                </article>
+                <article>
+                    <h2 class="texto_carro">AngularJS</h2>
+                    <h2>$25</h2>
+                </article>
+                <article>
+                    <a href="Producto.html">
+                        <img class="img_form" src="img/1.jpg" alt="">
+                    </a>
+                </article>
+                <article>
+                    <h2 class="texto_carro">vuejs</h2>
+                    <h2>$25</h2>
+                </article>
+            </div>
+        </aside>
+    </div>
+    <div class="total">
+        <h1 class="pago_total">Pago total: $75</h1>
+    </div>
+    <div class="separar"></div>
+    <footer class="footer animate__animated animate__fadeInUp animate__delay-1s">
+        <p class="footer__texto">Front End Store - Todos los derechos Reservados 2022</p>
+
+    </footer>
+
+</body>
+
+</html>
